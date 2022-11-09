@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/autoshop_kyiv/static/css/main.dcdcf4f5.css",
-    "main.js": "/autoshop_kyiv/static/js/main.00b6bf03.js",
+    "main.js": "/autoshop_kyiv/static/js/main.c021460c.js",
     "static/js/787.cd48ec24.chunk.js": "/autoshop_kyiv/static/js/787.cd48ec24.chunk.js",
     "static/media/delivery.png": "/autoshop_kyiv/static/media/delivery.6f3224d5162fc41e615c.png",
     "static/media/Inter-SemiBold.ttf": "/autoshop_kyiv/static/media/Inter-SemiBold.4d56bb21f2399db8ad48.ttf",
@@ -22,11 +22,11 @@
     "static/media/location.svg": "/autoshop_kyiv/static/media/location.514be24799426b84c7a6fc1414598448.svg",
     "static/media/direction.svg": "/autoshop_kyiv/static/media/direction.02120b307e31b7552ddb9e8d56796a45.svg",
     "main.dcdcf4f5.css.map": "/autoshop_kyiv/static/css/main.dcdcf4f5.css.map",
-    "main.00b6bf03.js.map": "/autoshop_kyiv/static/js/main.00b6bf03.js.map",
+    "main.c021460c.js.map": "/autoshop_kyiv/static/js/main.c021460c.js.map",
     "787.cd48ec24.chunk.js.map": "/autoshop_kyiv/static/js/787.cd48ec24.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.dcdcf4f5.css",
-    "static/js/main.00b6bf03.js"
+    "static/js/main.c021460c.js"
   ]
 }
