@@ -1,0 +1,58 @@
+.car_select{
+    display: flex;
+    gap:30px;
+    font-size: 15px;
+    align-items: center;
+flex-wrap: wrap;
+
+    
+    // width: 30vw;
+    ul{
+        
+        display: flex;
+        list-style:none;
+        gap:20px;
+        li{
+            input{
+                
+                border:2px solid rgba(0,0,0,0.1);
+                height: 30px;
+                padding:0px 10px;
+                width: 72px;
+                transition: width 0.3s ease-in-out, outline 0.1s ease-in-out;
+            }
+            :focus{
+                border: none;
+                outline:2px solid #35ac0d7b;
+                width: 150px;
+              
+               
+            } 
+            input::placeholder{
+                text-align: center;
+            }
+            input:focus::placeholder{
+                text-align: left;
+            }
+            // height: 50px;
+            // padding:5px 10px;
+            // border:1px solid black;
+        }
+        :nth-child(3) input{
+            width: 60px;
+        }
+    }
+}
+@media(max-width:1000px){
+    .car_select{
+        width: 100%;
+    }
+    .car_select ul{
+        width: 92vw;
+        gap:10px;
+        justify-content: space-between;
+    }
+    .car_select-title{
+        display: none;
+    }
+}

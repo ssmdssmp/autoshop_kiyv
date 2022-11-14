@@ -1,0 +1,247 @@
+.filters{
+    // display: none !important;
+    // border:1px solid black;
+    border-top:unset;
+    position: relative;
+    
+    width: 80vw;
+    bottom:0;
+    height: auto;
+    background:white;
+    display: flex;
+    align-items: center;
+    gap:4vh;
+    flex-direction: column;
+    justify-content: space-between;
+    padding:3vh 1.5vw;
+    
+    
+    // border:1px solid black;
+    
+}
+.filters-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:4vh;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.filters-list{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+    gap:10px 10px;
+    
+
+}
+.filters-list-item-content{
+    width: 100%;
+    height:100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content:center;
+    align-items: center;
+}
+
+.filters-list-item{
+    position: relative;
+    
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    width: 160px;
+    height: 45px;
+    border: 1px solid rgba(0, 0, 0, 0.166);
+    list-style: none;
+    gap:2vw;
+    border-radius: 4px;
+    transition: margin 0.3s;
+    p{
+        font-size: 15px;
+    }
+    img{
+        display: none;
+        position: absolute;
+        left:0;
+        bottom:0;
+    filter:invert(0.6);
+    height: 20px;
+    }
+   
+}
+
+.active{
+    background: #36AC0D;
+    color:white;
+    img{
+        filter:invert(0);
+    }
+    border:none;
+    box-shadow:1px 1px 1px #36AC0D;
+}
+.filters-buttons{
+
+    gap:2vw;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    button{
+        width: 100px;
+        cursor: pointer;
+        border:none;
+        height: 40px;
+        transition: all 0.3s ease-in,;
+        border-radius: 4px;
+        background: white;
+    }
+    .select-filters-button{
+       color: white;
+        background:#36AC0D;;
+     
+    }
+    button:hover{
+        background: #2ca703;
+        transform: scale(1.03);
+        color:white;
+    }
+    button:active{
+        transform: scale(1);
+    }   
+}
+
+.filters-active{
+    cursor: pointer;
+    ul{
+        display: flex;
+        list-style: none;
+        gap:1vw;
+        flex-wrap: wrap;
+        padding:15px;
+        max-width: 80vw;
+    }
+    li{
+        background: #36AC0D;
+        color:white;
+        white-space: nowrap;
+        display: flex;
+        font-weight: 700;
+        min-width: 60px;
+        height: 20px;
+        border-radius: 4px;
+        padding: 5px;
+        font-size: 13px;
+        align-items: center;
+        justify-content: space-around;
+        gap:5px;
+        
+    }
+    ul li img{
+        height: 12px;
+
+        filter:invert(1);
+    }
+}
+.sub_filters{
+    
+    background: #36ac0d1f;
+    z-index: 10;
+    position: absolute;
+    
+    display: flex;
+    align-items: center;
+height: fit-content;
+width: 77vw;
+    z-index: 0;
+    transition: opacity 0.3s ease-in-out;
+    transition-property: opacity;
+    transition-delay: 0.3s;
+    padding:15px 0px;
+}
+.sub_filters-list{
+    
+    cursor: default;
+    z-index: 10;
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: auto;
+    gap:10px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.sub_filters-list-item{
+    cursor: pointer;
+    color:rgba(0,0,0,0.7);
+    border-radius: 4px;
+    // max-width:200px;
+    width: 160px;
+    padding:4px;
+    height: fit-content;
+    min-height: 30px;
+    max-height: 60px;
+    background: transparent;
+    border:none;
+    font-size: 1.7vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color:#fff;
+    border:1px solid #36AC0D;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out,top 0.3s ease-in-out;
+    
+}
+
+
+.sub_filters-list-item:hover{
+    color:white;
+    background-color: #36AC0D;
+}
+.filters-buttons-wrapper{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    
+}
+.select-producers{
+    display: flex;
+    gap:20px;
+    align-items: center;
+    
+    p{
+        white-space: nowrap;
+    }
+}
+@media (max-width:1000px){
+    .filters{
+        width: 95vw;
+    }
+    .select-producers{
+        p{display: none;}
+    }
+    .filters-list-item{
+        width: 25vw
+    }
+    .sub_filters{
+        width: 92vw;
+    }
+    .sub_filters-list-item{
+        width: 25vw;
+    }
+    .filter-button {
+        button{
+            width: 20vw;
+        }
+        
+    }
+    .select-filters-button{
+        color: white;
+         background:#36AC0D;;
+      
+     }
+}

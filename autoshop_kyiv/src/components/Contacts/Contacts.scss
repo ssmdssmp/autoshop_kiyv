@@ -1,0 +1,56 @@
+.contacts-wrapper{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+    width: 80vw;
+    h2{ 
+        font-weight: normal;
+    }
+}
+.contacts{
+    display: flex;
+    flex-wrap: wrap;
+    gap:50px;
+    
+    
+}
+.contacts-map{
+    width: 40vw;
+    height: 350px;
+    max-height: 100vh;
+    box-shadow: 0px 0px 2px rgba(0,0,0,0.2);
+}
+.contacts-text{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    // justify-content: space-between;
+    gap:50px;
+
+    ul{
+        
+        display: flex;
+        flex-direction: column;
+        gap:20px;
+        list-style: none;
+        li{
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            a{
+                text-decoration: none;
+                color:#36AC0D;
+            }
+        }
+    }
+    
+}
+@media(max-width:1000px){
+    .contacts-map{
+        width: 95vw;
+    }
+    .contacts-wrapper{
+        width: 95vw;
+    }
+}
